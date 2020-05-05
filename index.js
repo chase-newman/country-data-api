@@ -7,7 +7,11 @@ var app = express();
 app.use(cors());
 
 app.get("/", (req,res) => {
-    res.json(["chase", "jordan", "newman"]); 
+    res.json({
+        country: "United States",
+        currency: "USD",
+        population: 3000000
+    }); 
 });
 
 app.listen(PORT, () => {
