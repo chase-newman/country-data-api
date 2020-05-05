@@ -6,6 +6,6 @@ app.get("/", (req,res) => {
     res.json(["chase", "jordan", "newman"]); 
 });
 
-app.listen(8080, () => {
+app.listen(3000, () => {
    console.log("Server Running On Port 8080") 
 });
