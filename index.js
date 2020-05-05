@@ -1,7 +1,9 @@
 var express = require("express");
 var app = express();
+import cors from 'cors';
 var PORT = process.env.PORT || 5000;
 
+app.use(cors());
 
 app.get("/", (req,res) => {
     res.json(["chase", "jordan", "newman"]); 
