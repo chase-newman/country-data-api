@@ -1,7 +1,8 @@
 var express = require("express");
-var app = express();
-import cors from 'cors';
 var PORT = process.env.PORT || 5000;
+var cors = require("cors");
+var app = express();
+
 
 app.use(cors());
 
